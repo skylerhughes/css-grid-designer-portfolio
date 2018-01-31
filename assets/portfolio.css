@@ -146,6 +146,21 @@ h2 {
 
 /* Media Q's */
 
+
+@media (max-width: 900px) {
+     .footer .nav-item {
+        text-align: left;
+        display: block;
+    }
+    
+    .footer .nav-item-last {
+        text-align: left;
+        display: block;
+    }
+    
+    
+}
+
 @media (max-width: 700px) {
   .nav {
     grid-template-areas:
@@ -170,6 +185,7 @@ h2 {
     .btn {
     padding: 2% 6%;
     }
+    
     
  
 }

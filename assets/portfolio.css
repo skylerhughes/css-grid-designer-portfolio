@@ -17,15 +17,16 @@ a {
 }
 
 h1 {
-   font-size: 3rem;
-    line-height: 4rem;
+   font-size: 5.75rem;
+    line-height: 6.25rem;
     max-width: 850px;
+    font-weight: 600;
 }
 
 
 h2 {
    font-size: 1.375rem;
-    max-width: 562px;
+    max-width: 625px;
     font-weight:400;
 
 }
@@ -37,10 +38,17 @@ h2 {
   margin: 0px auto;
 }
 
+.gallery img:hover {
+	opacity: .8;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
 /* Navigation */
 
 .logo {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .navigation  {
@@ -67,6 +75,21 @@ h2 {
     transition: all .3s linear;
 }
 
+.nav-item-contact {
+     list-style: none;
+    color: #aaaaae;
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 2% 5%;
+    border-radius: 50px;
+    background: hsla(0,0%,100%,.15);
+}
+
+.nav-item-contact:hover {
+    color: #FFF;
+    background: hsla(0,0%,100%,.25);
+       transition: all .3s linear;
+}
 
 .menu a {
     text-decoration: none;
@@ -89,7 +112,7 @@ h2 {
 .head {
     grid-area:head head;
     min-height: 400px;
-    margin-top: 128px;
+    margin-top: 72px;
     margin-bottom: 128px;
 }
 
@@ -113,7 +136,7 @@ h2 {
 .gallery {
  display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
     
 .gallery img {
@@ -186,6 +209,12 @@ h2 {
     padding: 2% 6%;
     }
     
+     .gallery {
+ display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+    
     
  
 }
@@ -193,12 +222,23 @@ h2 {
 @media (max-width: 500px) {
     
      h1 {
-        font-size: 2.25rem;
-        line-height: 2.75rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+        max-width: 225px;
     }
     
     .head {
         margin-top: 72px;
     }
+    
+    .gallery {
+ display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
     
 }
